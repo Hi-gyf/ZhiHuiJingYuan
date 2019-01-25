@@ -1,0 +1,46 @@
+<!--pages/market/market.wxml-->
+<swiper current='{{current_page}}' bindchange='page_change'>
+<swiper-item>
+ <view class='page_row'>
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" placeholder="输入关键词搜索"/>
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view>
+ </view>
+
+<view class="product-container">
+ <scroll-view scroll-x="false" scroll-y="true" class='scroll-views'>
+  <view  class="product-item" wx:for="{{products}}" wx:for-index="ids" wx:for-item="product" data-mkid='{{product.mkid}}' bindtap='product_click'>
+      <image class="product-image" src="http://localhost:8080/images/{{product.mkImg}}"><view class="product-state">出  售</view></image>
+      <view class="product-name">{{product.mkTitle}}</view>
+      <view class="product-price">￥{{product.mkPrice}}</view>
+  </view>
+  <view style='clear:both;'></view>
+  </scroll-view>
+</view>
+</swiper-item>
+<swiper-item>
+  <view>asdasdasdasd</view>
+</swiper-item>
+</swiper>
+
+<view class='footer'>
+  <view class='footer-item-left' bindtap='products_list_click'>
+    <image class='footer-item-icon' src='/images/bar/{{products_list_icon}}'></image>
+    <view class='footer-item-title'>校园市场</view>
+  </view>
+  <view class='footer-item-center'>
+    <view class='footer-item-title'>发布</view>
+  </view>
+  <view class='footer-item-right' bindtap='my_products_list_click'>
+  <image class='footer-item-icon' src='/images/bar/{{my_products_list_icon}}'></image>
+    <view class='footer-item-title'>我的发布</view>
+  </view>
+</view>
+
+<view class='publish-product' bindtap='publish_products_click'>
+  <image class='publish-product-icon' src='/images/bar/publish_product.png'></image>
+</view>

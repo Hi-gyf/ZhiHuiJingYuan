@@ -1,0 +1,45 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/publish_products/publish_products",
+    "pages/show_product/show_product",
+    "pages/market/market",
+    "pages/logs/logs",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/school/school",
+    "pages/time_change/time_change",
+    "pages/twohands/twohands",
+    "pages/friends/friends",
+    "pages/registered/registered",
+    "pages/wechat/wechat"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#D53C3E",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/bar/page.png",
+        "selectedIconPath": "/images/bar/page1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/bar/me.png",
+        "selectedIconPath": "/images/bar/me1.png"
+      }
+    ]
+  }
+}

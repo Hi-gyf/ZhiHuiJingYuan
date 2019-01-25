@@ -1,0 +1,94 @@
+page{
+  background: url('https://www.gcwtg.com/images/wx_management/publish_products/36.jpg') no-repeat;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.title{
+  height: 100rpx;
+  margin-top: 50rpx;
+}
+
+.p-form{
+  margin:50rpx;
+  width: 90%;
+}
+.form-item{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  background: #E9967A;
+  opacity: 0.8;
+  height: 80rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  border-radius: 100rpx;
+}
+.p-label{
+  color: white;
+  margin-right: 40rpx;
+  margin-top:5rpx;
+  width: 25%;
+  text-align: right;
+}
+.p-input{
+  color: white;
+  width: 70%;
+}
+.choose-container>.form-item{
+  background: #CDCDB4;
+  margin-left: 60rpx;
+  margin-top: 30rpx;
+  padding-top: 10rpx;
+  height: 60rpx;
+}
+.choose-container>.form-item>label{
+  color: white;
+  font-size: 30rpx;
+  margin-top:10rpx;
+}
+.choose-container>.form-item>.p-input{
+  color: #FFF8DC;
+  font-size: 30rpx;
+}
+
+.p-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.form-item-textarea{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  padding-bottom: 5rpx;
+  background: #E9967A;
+  font-size: 30rpx;
+  opacity: 0.8;
+  height: 200rpx;
+  padding: 20rpx 30rpx 0 30rpx;
+  border-radius: 100rpx;
+  width: 50%;
+}
+.p-textarea{
+  height: 190rpx;
+}
+.image-container{
+  border: 1px solid silver;
+  width: 40%;
+  height: 200rpx;
+  margin: 20rpx;
+}
+.upload-image{
+  width: 100%;
+  height: 100%;
+}
+.publish-btn{
+  margin: 30rpx 50rpx 0 150rpx;
+  width: 50%;
+  color: white;
+  background:#E9967A;
+}

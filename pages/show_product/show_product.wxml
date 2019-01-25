@@ -1,0 +1,43 @@
+<view class="container">
+
+<!--头部，卖家信息展示-->
+  <view class='header'>
+    <view class='header-left'>
+      <view class="seller-photo">
+        <image src='../../images/test/test1.jpg' class="photo" ></image>
+      </view>
+      <view class="seller-profile">
+        <view class="seller-name">我居北海君南海111111111</view>
+        <view class="sell-time">2019-01-01 16:20</view>
+      </view>
+    </view>
+    <view class="header-right">
+      <button class='contact-btn' size='mini'>微信联系</button>
+    </view>
+  </view>
+
+  <!--商品信息展示-->
+  <view class='product-container'>
+    <view class='product-item'>
+      <view class='product-title'>自行车低价转让</view>
+      <view class='product-price'>￥19.00</view>
+      <view class='product-type'>化妆品</view>
+      <view class='product-detail1'>欧莱雅</view>
+      <view class='product-detail2'>爽肤水</view>
+      <view style='clear:both;'></view>
+      <view class='product-profile'>这是介绍这是这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍介绍这是介绍</view>
+    </view>
+    <view class='product-photo'>
+      <image src='../../images/test/test1.jpg' class='product-photo-big' mode='aspectFit'></image>
+    </view>
+  </view>
+  
+  <!--评论区-->
+  <view class='comment-container'>
+  <view class='comment-title'>留言（0）</view>
+    <view class='leave-message'>
+      <input class='message-input' placeholder='说点什么...'></input>
+    </view>
+  </view>
+</view>
+

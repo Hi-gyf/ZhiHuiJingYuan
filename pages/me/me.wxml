@@ -1,0 +1,33 @@
+<view class='container'>
+  <view class='userinfo' style="background-image:url('{{userinfo.background_url}}');background-size:cover">
+      <image class='userinfo-avatar' src='{{userinfo.photo_url}}' background-size="cover" catchtap='toLogin'></image>
+      <text class='userinfo-nickname'>{{userinfo.name}}</text>
+    </view>
+    <view class="separate"></view>
+    <view class='order' catchtap='toOrder'>
+      <text class='myorder-text' catchtap='towechat'>我的发布</text>
+      <text class='myorderlook-text'>查看所有物品发布情况</text>
+      <image class='next-image' src='/images/bar/rightto.png'></image>
+    </view >
+    <view class='line'></view>
+<view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="separate"></view>
+  <view class="person-list">
+    <block wx:for-items="{{list_items}}" wx:key="name">
+        <view class="list-item" catchtap='{{item.url}}' data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+          <image class="item-image" src="{{item.imageurl}}"></image>
+          <text class="item-text">{{item.name}}</text>
+        </view>
+         <view wx:if="{{item.typeId < 3}}" class="person-line"></view>
+    </block>
+  </view>
+  
+  <view class="separate"></view>
+  </view>

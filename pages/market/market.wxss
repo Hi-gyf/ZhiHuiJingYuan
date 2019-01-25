@@ -1,0 +1,131 @@
+/* pages/market/market.wxss */
+page{
+height: 100%;
+}
+swiper{
+height: 100%;
+}
+.swiper-items{
+  height: 100%;
+}
+.scroll-views{
+  height: 100%;
+}
+.search{
+  width: 80%;
+}
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  background: white;
+}
+.search_arr input{
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+ 
+.sousuo {
+  margin-left: 15rpx;
+  margin-top: 30rpx;
+  width: 15%;
+  line-height: 150%;
+  height: 60rpx;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  background: white;
+}
+.page_row{
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+  background: #7acfa6;
+}
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.product-container{
+  background: #EAEAEA;
+  height:80%;
+}
+.product-item{
+  margin:10rpx;
+  padding: 10rpx;
+  width: 44%;
+  float: left;
+  height:auto;
+  background: white;
+  position: relative;
+}
+.product-image{
+  width: 100%;
+}
+.product-name{
+  font-weight: bold;
+}
+.product-price{
+  color: #EE7600;  
+}
+.product-state{
+  position: absolute;
+  top: 30rpx;
+  left: 0rpx;
+  width: 150rpx;
+  background: #EE7600;
+  color: white;
+  padding-left: 10rpx;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: 10%;
+  background: white;
+}
+
+.footer-item-left{
+  margin-left:70rpx;
+  font-size: 25rpx;
+}
+.footer-item-center{
+  margin-top:70rpx;
+  margin-left:170rpx;
+  font-size: 30rpx;
+}
+.footer-item-right{
+  margin-left:190rpx;
+  font-size: 25rpx;
+}
+.footer-item-icon{
+  width: 60%;
+  height: 60%;
+  margin-left: 20rpx;
+}
+.publish-product{
+  position: fixed;
+  bottom: 50rpx;
+  left:310rpx;
+  width: 120rpx;
+  height:120rpx;
+  background : #EE7600;
+  border-radius:120rpx; 
+}
+.publish-product-icon{
+  width: 60%;
+  height:60%;
+  margin: 25rpx;
+}
+

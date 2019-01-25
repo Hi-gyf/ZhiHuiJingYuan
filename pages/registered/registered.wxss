@@ -1,0 +1,72 @@
+.images{
+  width: 100px;
+  height: 100px;
+}
+.loginTitle{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.select{
+	font-size: 12px;
+	color: red;
+	width: 50%;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 5rpx solid red;
+}
+.default{
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.hr{
+	border: 1px solid #cccccc;
+	opacity: 0.2;
+}
+.account{
+	display: flex;
+	flex-direction: row;
+}
+.ac{
+	padding: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+}
+.ipt{
+	padding-top: 10px;
+}
+.placeholder-style{
+	font-size: 14px;
+	color: #cccccc;
+}
+.btn{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 90px;
+	font-size: 12px;
+	color: #666666;
+	background-color: #f2f2f2;
+}
+.btn1{
+  margin-top: 40px;
+  padding-top: 0px;
+  height: 40px;
+  width: 60%;
+  align-items: center;
+  color:blue;
+  background-color: rebeccapurple
+}
+
+.btn2{
+  margin-top: 40px;
+  padding-top: 0px;
+  height: 40px;
+  width: 60%;
+  align-items: center;
+  color:aquamarine;
+  background-color: rebeccapurple
+}

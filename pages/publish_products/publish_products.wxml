@@ -1,0 +1,94 @@
+<view class='container'>
+    <image src='https://www.gcwtg.com/images/wx_management/publish_products/publish_products_title.png' class='title'></image>
+    <form class='p-form' bindsubmit='formSubmit'>
+      <view class='form-item'>
+        <label for='pTitle' class='p-label'>物品名称</label>
+        <input type='text' class='p-input' name='pTitle' placeholder='例如：手表、口红'></input>
+      </view>
+      <view class='form-item'>
+        <label for='pPrice' class='p-label'>物品价格</label>
+        <input type='digit' class='p-input' name='pPrice' placeholder='价格低更容易卖出去哦~'></input>
+      </view>
+      <view class='form-item'>
+        <label for='pType' class='p-label'>物品类别</label>
+        <picker name='pType' bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='p-input'>
+          <view>{{array[index]}}</view>
+        </picker>
+      </view>
+
+      <view class='divider'></view>
+      <!--化妆品-->
+      <view class='choose-container' style="display:{{controlIfHide.ifCosmetics}}">
+        <view class='form-item'>
+          <label for='cosName' class='p-label'>品牌</label>
+          <input class='p-input' name='cosName' placeholder='例如：百雀羚'></input>
+        </view>
+        <view class='form-item'>
+          <label for='cosType' class='p-label'>类别</label>
+          <input class='p-input' name='cosType' placeholder='例如：口红、眼影'></input>
+        </view>
+      </view>
+      <!--U盘-->
+      <view class='choose-container' style="display:{{controlIfHide.ifUDisk}}">
+        <view class='form-item'>
+          <label for='uName' class='p-label'>品牌</label>
+          <input class='p-input' name='uName' placeholder='如：金士顿、闪迪'></input>
+        </view>
+        <view class='form-item'>
+          <label for='uSize' class='p-label'>存储容量</label>
+          <picker name='uSize' bindchange="uSizeChange" value="{{uSizeIndex}}" range="{{uSizeArray}}">
+            <view class='p-input'>{{uSizeArray[uSizeIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+    <!--书籍-->
+    <view class='choose-container' style='display:{{controlIfHide.ifBook}}'>
+        <view class='form-item'>
+          <label for='bName' class='p-label'>书名</label>
+          <input class='p-input' name='bName' placeholder='如：三体、红楼梦'></input>
+        </view>
+        <view class='form-item'>
+          <label for='bAuthor' class='p-label'>作者</label>
+          <input class='p-input' name='bAuthor' placeholder='如：罗贯中、冰心'></input>
+        </view>
+    </view>
+    <!--钱包-->
+    <view class='choose-container' style='display:{{controlIfHide.ifWallet}}'>
+      <view class='form-item'>
+        <label for='wColor' class='p-label'>颜色</label>
+        <input class='p-input' name='wColor' placeholder='如：黑色、红色'></input>
+      </view>
+    </view>
+    <!--衣物-->
+    <view class='choose-container' style='display:{{controlIfHide.ifClothes}}'>
+      <view class='form-item'>
+        <label for='clothesColor' class='p-label'>颜色</label>
+        <input class='p-input' name='clothesColor' placeholder='如：黑色、红色'></input>
+      </view>
+      <view class='form-item'>
+         <label for='clothesType' class='p-label'>款式</label>
+        <picker name='clothesType' bindchange="clothesTypeChange" value="{{clothesTypeIndex}}" range="{{clothesTypeArray}}" class='p-input'>
+          <view>{{clothesTypeArray[clothesTypeIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <!--其他-->
+    <view class='choose-container' style='display:{{controlIfHide.ifOther}}'>
+      <view class='form-item'>
+        <label for='oName' class='p-label'>物品名称</label>
+        <input class='p-input' name='oName' placeholder='如：手表'></input>
+      </view>
+    </view>
+    <view class='p-info'>
+      <view class='form-item-textarea'>
+      <label for='desc' class='p-label'>其它</label>
+      <textarea class='p-textarea'  name='desc' placeholder='添加更多描述信息更容易卖出哦！'></textarea>
+    </view>
+    <view class="image-container" bindtap="chooseimage">
+      <image src="{{tempFilePaths}}" mode="aspecFill" class='upload-image'/>  
+    </view>
+    </view>
+      <button formType='submit' class='publish-btn'>发布</button>
+    </form>
+</view>
+

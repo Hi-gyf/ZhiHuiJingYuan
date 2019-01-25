@@ -1,0 +1,27 @@
+  <view class="content">
+<form bindsubmit="Registeredbtncheck">
+	<view class="hr"></view>
+			<view class="accountType">
+				<view class="account">
+					<view class="ac">账号</view>
+					<view class="ipt"><input name="username" bindblur="accountBlur" type="text" placeholder="学号/教师号" bindinput="username" class="placeholder-style"/>
+					</view>
+				</view>
+				<view class="hr"></view>
+				<view class="account">
+					<view class="ac">密码</view>
+					<view class="ipt"><input name="password" bindblur="passwordBlur" type="text" password placeholder="请输入密码" bindinput="password" class="placeholder-style"/>
+					</view>
+				</view>
+				<view class="hr"></view>
+        <button class="btn1" bindtap='photo_fix_click'>上传</button>
+        <view class='hr'></view>
+        <view class="registered">
+          <button class="btn2" form-type='submit'>注册用户</button>
+        </view>
+			</view>
+  </form>
+  <view>
+    <image src='{{user_info.user_head}}' class="images"></image>
+  </view>
+</view>

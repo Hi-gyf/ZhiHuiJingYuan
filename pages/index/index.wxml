@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<!--轮播图-->
+<swiper class="banner" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" model="aspectFit" style="width: {{imageWidth}}px;"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="menu_container">
+  <!--在这里增添了menu_item_container样式，避免因插入navigator标签而导致页面布局产生变化-->
+  <!--原本没有navigator时的写法：<view  class="menu_item" wx:for="{{menus}}" wx:for-index="ids" wx:for-item="menu"> -->
+  <view  class="menu_item_container" wx:for="{{menus}}" wx:for-index="ids" wx:for-item="menu">
+    <!--用了navigator标签而没有在view标签中加bindtap-->
+    <navigator class="menu_item" url='{{menu.url}}'>
+      <image class="menu_icon" src="{{menu.icon}}"></image>
+      <text class="menu_name">{{menu.name}}</text>
+    </navigator>
+  </view>
+</view>
+
+<view style='height:1px; background-color:gray; margin:5px;'></view>
+
+<text class="subtitle">校园新闻</text>
+<text style='float:right; font-size:small; padding-right:20rpx; padding-top:10rpx;'>更多新闻</text>
+<view class="news_container">
+  <view class="news_item" hover='true' 
+    wx:for="{{newses}}" wx:for-index="idx" wx:for-item="news">
+    <image class="news_icon" src="{{news.url}}"></image>
+    <text class="news_summary">{{news.summary}}</text>
+  </view>
+</view>
+
+<view style='height:1px; background-color:gray; margin:5px; margin-top:20px;'></view>
+
+<text class='subtitle'>我的课表</text>
+<map style="width:100%;"></map>
